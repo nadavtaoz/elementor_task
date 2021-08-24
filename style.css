@@ -1,0 +1,40 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+#container .box {
+    width: 30%;
+    text-align: center;
+}
+
+#container .box img {
+    width: 100%;
+    height: 180px;
+    max-width: 320px;
+}
+
+#container .box .popup-button {
+    cursor: pointer;
+}
+
+#overlay {
+    background-color: grey;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#overlay #popup-container {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+}

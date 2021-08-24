@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Boxes</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="box">
+            <img src="images/cat1.jpeg" alt="1"/>
+            <h1 class="box-title">1</h1>
+            <button class="popup-button" onclick="openPopup(1)">Open popup</button>
+        </div>
+
+        <div class="box">
+            <img src="images/cat2.jpeg" alt="2"/>
+            <h1 class="box-title">2</h1>
+            <button class="popup-button" onclick="openPopup(2)">Open popup</button>
+        </div>
+
+        <div class="box">
+            <img src="images/cat3.jpeg" alt="3"/>
+            <h1 class="box-title">3</h1>
+            <button class="popup-button" onclick="openPopup(3)">Open popup</button>
+        </div>
+
+    </div>
+
+    <div id="overlay" onclick="closePopup()">
+        <div id="popup-container">
+
+        </div>
+    </div>
+
+</body>
+</html>
